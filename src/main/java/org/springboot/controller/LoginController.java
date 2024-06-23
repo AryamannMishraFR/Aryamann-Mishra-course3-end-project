@@ -9,7 +9,6 @@ public class LoginController {
 
     @GetMapping("/user/login")
     public String showLoginForm(Model model) {
-        // Add any necessary attributes to the model here
         return "login";
     }
 }
