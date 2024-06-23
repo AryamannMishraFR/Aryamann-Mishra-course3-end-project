@@ -15,26 +15,25 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Starter Web -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>3.3.0</version>
         </dependency>
 
-        <!-- Spring Boot Starter Thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
             <version>3.3.0</version>
         </dependency>
-        <!-- Spring Boot Starter Data JPA -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>3.3.0</version>
         </dependency>
-        <!-- Spring Boot Starter Security -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -47,21 +46,21 @@
             <version>4.0.1</version> <!-- Adjust version as per your requirement -->
             <scope>provided</scope>
         </dependency>
-        <!-- H2 Database -->
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.1.214</version>
             <scope>runtime</scope>
         </dependency>
-        <!-- Lombok -->
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Test dependencies -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -72,7 +71,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <!-- Ensure the version is appropriate for your Spring Boot version -->
             <version>3.3.0</version>
         </dependency>
 
