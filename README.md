@@ -1,7 +1,9 @@
 # Aryamann-Mishra-course3-end-project
 
 Developer: Aryamann  Mishra
+
 Email: fr.aryamann.mishra@prolim.in
+
 Project: Ecommerce website for SportyShoes (Course 3 end project)
 
 Technologies used: 
