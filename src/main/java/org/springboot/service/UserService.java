@@ -27,6 +27,10 @@ public class UserService {
         }
         return null;
     }
+    public void save(User user) {
+        userRepository.save(user);
+    }
+
 
     public void updatePassword(Long userId, String newPassword) {
         User user = userRepository.findById(userId).orElse(null);

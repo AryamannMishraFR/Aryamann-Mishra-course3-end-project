@@ -5,29 +5,27 @@ import org.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
-@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @GetMapping("/register")
+    // GET method for displaying the registration form
+    @GetMapping("/user/register")
     public String showRegistrationForm(Model model) {
         model.addAttribute("user", new User());
         return "register";
     }
 
-    @PostMapping("/register")
-    public String registerUser(@ModelAttribute User user) {
-        userService.register(user);
-        return "redirect:/login";
-    }
-
-    @GetMapping("/login")
-    public String showLoginForm() {
-        return "login";
+    // POST method for handling the form submission
+    @PostMapping("/user/register")
+    public String registerUser(@ModelAttribute("user") User user) {
+        userService.save(user);
+        return "redirect:/user/register?success";
     }
 }
