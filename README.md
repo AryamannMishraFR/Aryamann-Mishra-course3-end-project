@@ -20,10 +20,17 @@ Technologies used:
 Things to make sure while running the project:
 
   1. Version management is very important as for this project java version 22 is used, Spring version 3.3.0 is used and all the other versions are mentioned in the pom.xml file.
-  2. Port on which application is runnings is 8080
-  3. Urls to test: 1. localhost:8080/user/register  2. localhost:8080/login
-  4. Comple using mvn clean/compile, then execute the .jar file. or execute directly from the IDE
-  5. Corretly download and load the project and all its dependencies.
+  2. Port on which application is runnings is 8080, make sure port 8080 is free.
+  3. Urls to test:
+     
+     1. localhost:8080/user/register
+     2. localhost:8080/user/login
+     3. localhost:8080/product/add
+     4. localhost:8080/product/list
+     5. localhost:8080/product/delete/{productID} (eg. 1,2,3,4,5,...)
+        
+  5. Comple using mvn clean/compile, then execute the .jar file. or execute directly from the IDE
+  6. Corretly download and load the project and all its dependencies.
 
 Other Notes:
   
