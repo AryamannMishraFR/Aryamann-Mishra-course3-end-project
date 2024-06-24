@@ -21,7 +21,10 @@
         <td th:text="${product.category}">Product Category</td>
         <td th:text="${product.price}">Product Price</td>
         <td>
-            <a th:href="@{/product/delete/{id}(id=${product.id})}">Delete</a>
+            <form th:action="@{/product/delete/{id}(id=${product.id})}" method="post" onsubmit="return confirm('Are you sure you want to delete this product?');">
+                <input type="hidden" name="_method" value="delete" />
+                <button type="submit">Delete</button>
+            </form>
         </td>
     </tr>
     </tbody>
