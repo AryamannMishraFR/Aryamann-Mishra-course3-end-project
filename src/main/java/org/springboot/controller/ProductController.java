@@ -35,7 +35,7 @@ public class ProductController {
         return "redirect:/product/list"; // Redirect to the product list page
     }
 
-    @DeleteMapping("/delete/{id}")
+    @PostMapping("/delete/{id}")
     public String deleteProduct(@PathVariable Long id) {
         // Add error handling for product not found scenario if needed
         productService.delete(id);
